@@ -28,7 +28,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp/bin/Debug/</OutputPath>
-    <DefineConstants>UNITY_2022_3_42;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_OSX;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_SPATIALTRACKING;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;ENABLE_MONO;NET_4_6;NET_UNITY_4_8;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;CROSS_PLATFORM_INPUT;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_EDITOR_ONLY_COMPILATION</DefineConstants>
+    <DefineConstants>UNITY_2022_3_42;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_OSX;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_SPATIALTRACKING;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;ENABLE_MONO;NET_4_6;NET_UNITY_4_8;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;CROSS_PLATFORM_INPUT;USE_PHYSICS2D;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_EDITOR_ONLY_COMPILATION</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169;USG0001</NoWarn>
@@ -71,12 +71,12 @@
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Inspectors/Triggers/Legacy/SequenceTriggerEditor.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Dialogue Editor/VariableViewWindow.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Tools/Importers/Celtx/CeltxConverterWindow.cs" />
-    <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Inspectors/Triggers/ItemPicker.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Dialogue Editor/DialogueEditorWindowAssetSection.cs" />
+    <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Inspectors/Triggers/ItemPicker.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Common/Scripts/Editor/Misc/TimedEventEditor.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Inspectors/Triggers/Legacy/SetQuestStateOnDialogueEventEditor.cs" />
-    <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Fields/Base/CustomFieldType_Text.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/UI/Standard UI/Dialogue UI/StandardUISubtitlePanelEditor.cs" />
+    <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Fields/Base/CustomFieldType_Text.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Options/Timeline/SetQuestStateBehaviourDrawer.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/UI/Standard UI/Dialogue UI/StandardUIMenuPanelEditor.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Dialogue Editor/DialogueEditorWindowActorSection.cs" />
@@ -85,8 +85,8 @@
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Dialogue Editor/DialogueEditorWindowVariableSection.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Dialogue Editor/DialogueDatabaseEditor.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Tools/DialogueSystemMenuItems.cs" />
-    <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Tools/Importers/Articy/ArticyConverterWindowDisabled.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Tools/Importers/Articy/ArticySchemaEditorTools.cs" />
+    <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Tools/Importers/Articy/ArticyConverterWindowDisabled.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Tools/Renamer/DialogueSystemAssetRenamerUtility.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Tools/Importers/Celtx/CeltxConverterWindowDisabled.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Common/Scripts/Editor/Save System/PlayerPrefsSavedGameDataStorerEditor.cs" />
@@ -94,8 +94,8 @@
     <Compile Include="Assets/Plugins/Pixel Crushers/Common/Scripts/Editor/UnityEvents/TagMaskDrawer.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Tools/Importers/Yarn2/Yarn2ImporterWindow.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Tools/Importers/Yarn/YarnEnumExtensions.cs" />
-    <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Inspectors/Triggers/ConditionPropertyDrawer.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Common/Scripts/Editor/Misc/AssetUtility.cs" />
+    <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Inspectors/Triggers/ConditionPropertyDrawer.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Common/Scripts/Editor/UI/UIDropdownFieldDrawer.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Tools/Importers/Articy/Schemas/Articy 4.0/Articy_4_0_EditorTools.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Common/Scripts/Editor/UI/UITextFieldDrawer.cs" />
@@ -197,9 +197,9 @@
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Dialogue Editor/Export/CSVExporter.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Dialogue Editor/DialogueEditorWindowLocationSection.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Tools/Importers/Yarn/YarnStatementType.cs" />
+    <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Inspectors/Save System/PersistentActiveDataEditor.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Options/Timeline/RunLuaBehaviourDrawer.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Options/Timeline/BarkDrawer.cs" />
-    <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Inspectors/Save System/PersistentActiveDataEditor.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Inspectors/Triggers/Legacy/SetAnimatorStateOnDialogueEventEditor.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Utility/LuaScriptWizard.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Dialogue Editor/DialogueEditorWindowDatabaseIssuesCheckSection.cs" />
@@ -219,8 +219,8 @@
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Tools/Importers/Aurora/AuroraPredefinedTokens.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Tools/Importers/Aurora/AuroraConverterWindow.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Tools/Importers/Yarn/YarnConverterWindowDisabled.cs" />
-    <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Inspectors/Triggers/Legacy/SetActiveOnDialogueEventEditor.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Dialogue Editor/Export/ChatMapperExporter.cs" />
+    <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Inspectors/Triggers/Legacy/SetActiveOnDialogueEventEditor.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Dialogue Editor/DialogueEditorWindowMain.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Inspectors/Triggers/LocationPopupDrawer.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Fields/Base/CustomFieldType_QuestState.cs" />
@@ -244,8 +244,8 @@
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Tools/Importers/Articy/ArticyEditorTools.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Scripts/Editor/CustomFieldType_TemplateType.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Tools/Setup Wizards/NPCSetupWizard.cs" />
-    <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Tools/Importers/Yarn2/YarnCommandTextSplitter.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Common/Scripts/Editor/Text/TextTableMassExportImportWindow.cs" />
+    <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Tools/Importers/Yarn2/YarnCommandTextSplitter.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Inspectors/Triggers/DialogueEntryPopupDrawer.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Options/Timeline/ShowAlertBehaviourDrawer.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Common/Wrappers/Editor/Text/TextTableAssetMenu.cs" />
@@ -263,16 +263,16 @@
     <Compile Include="Assets/Plugins/Pixel Crushers/Common/Scripts/Editor/Save System/SaverEditor.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Tools/Importers/Aurora/AuroraConverterWindowDisabled.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Inspectors/Save System/PersistentActiveDataMultipleEditor.cs" />
-    <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Options/Timeline/ContinueConversationBehaviourDrawer.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Inspectors/Triggers/ConditionObserverEditor.cs" />
+    <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Options/Timeline/ContinueConversationBehaviourDrawer.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Fields/Base/CustomFieldType_Item.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Inspectors/Triggers/Legacy/ConversationTriggerEditor.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Common/Scripts/Editor/Misc/MoreEditorUtility.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Inspectors/Triggers/Legacy/BarkTriggerEditor.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Inspectors/Manager/DialogueSystemControllerEditor.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Inspectors/Triggers/Legacy/SetAnimationOnDialogueEventEditor.cs" />
-    <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Tools/Importers/Yarn/YarnBuiltInOperatorEnum.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Utility/LuaScriptWizardDrawer.cs" />
+    <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Tools/Importers/Yarn/YarnBuiltInOperatorEnum.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Inspectors/Triggers/ConversationPicker.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Common/Scripts/Editor/Text/TextTableEditor.cs" />
     <Compile Include="Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Inspectors/Triggers/DialogueSystemTriggerEditor.cs" />
