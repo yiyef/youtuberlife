@@ -97,11 +97,11 @@ public class DialogManager : MonoBehaviour {
 
             //Check if the current line is within the length of dialog lines and close the dialog box if the last line was reached
             if (currentLine >= dialogLines.Length)
-            {
+            { 
                 if (dialogStarter.dialogChoices.Count == 0)//choiceA == null && choiceB == null)
                 {
                     dialogBox.SetActive(false);
-
+                   // Debug.Log("dialogStarter.dialogChoices.Count" + dialogStarter.dialogChoices.Count);
                     if (itemRecieved && !fullInventory)
                     {
                         GameMenu.instance.gotItemMessageText.text = "You found a " + Shop.instance.selectedItem.name + "!";
@@ -213,14 +213,51 @@ public class DialogManager : MonoBehaviour {
                 }
                 else
                 {
-                    dialogChoices.SetActive(true);
+                    dialogChoices.SetActive(true); 
                     //GameMenu.instance.btn = choiceButton;
                     //GameMenu.instance.SelectFirstButton();
-
-                    for (int i = 0; i < dialogStarter.dialogChoices.Count; i++)
+                    while (dialogChoices.transform.childCount > dialogStarter.dialogChoices.Count)
                     {
+                        Destroy(dialogChoices.transform.GetChild(dialogChoices.transform.childCount - 1).gameObject);
+                    }
+                    /*for (int i = 0; i < dialogStarter.dialogChoices.Count; i++)
+                    {
+                        Debug.LogError($"dialogStarter.dialogChoices.Count {dialogStarter.dialogChoices.Count}");
+                        Debug.LogError("dialogChoices.transform" + dialogStarter.transform.childCount);
                         GameObject choiceButton = Instantiate(dialogChoiceButton);
                         choiceButton.transform.SetParent(dialogChoices.transform, false);
+
+                        choiceButton.GetComponentInChildren<Text>().text = dialogStarter.dialogChoices[i].ChoiceText;
+                        choiceButton.GetComponent<DialogChoiceButton>().index = i;
+
+                        if (i == 0)
+                        {
+                            choiceButton.GetComponent<Button>().Select();
+                        }
+                    }*/
+
+
+
+
+                    // Iterate through the dialog choices
+                    for (int i = 0; i < dialogStarter.dialogChoices.Count; i++)
+                    {
+                       // Debug.LogError($"dialogStarter.dialogChoices.Count {dialogStarter.dialogChoices.Count}");
+                       // Debug.LogError("dialogChoices.transform" + dialogChoices.transform.childCount);
+
+                        GameObject choiceButton;
+
+                        if (i < dialogChoices.transform.childCount)
+                        {
+                            // Reuse existing button if it exists
+                            choiceButton = dialogChoices.transform.GetChild(i).gameObject;
+                        }
+                        else
+                        {
+                            // Instantiate a new button if it doesn't exist
+                            choiceButton = Instantiate(dialogChoiceButton);
+                            choiceButton.transform.SetParent(dialogChoices.transform, false);
+                        }
 
                         choiceButton.GetComponentInChildren<Text>().text = dialogStarter.dialogChoices[i].ChoiceText;
                         choiceButton.GetComponent<DialogChoiceButton>().index = i;
@@ -268,7 +305,7 @@ public class DialogManager : MonoBehaviour {
 
             dialogText.text = dialogLines[currentLine];
             dialogBox.SetActive(true);
-
+        //    Debug.LogError($"dialogBox.activeSelf  1 {dialogBox.activeSelf}");
 
             justStarted = true;
 
@@ -397,7 +434,7 @@ public class DialogManager : MonoBehaviour {
 
             dialogText.text = dialogLines[currentLine];
             dialogBox.SetActive(true);
-
+         //   Debug.LogError($"dialogBox.activeSelf 2 {dialogBox.activeSelf}");
 
             justStarted = false;
 
@@ -523,7 +560,7 @@ public class DialogManager : MonoBehaviour {
 
         dialogText.text = finalMessage[currentLine];
         dialogBox.SetActive(true);
-
+        Debug.LogError($"dialogBox.activeSelf 3 {dialogBox.activeSelf}");
         if (!ControlManager.instance.mobile)
         {
             justStarted = true;
@@ -560,7 +597,7 @@ public class DialogManager : MonoBehaviour {
 
         dialogText.text = finalMessage[currentLine];
         dialogBox.SetActive(true);
-
+        Debug.LogError($"dialogBox.activeSelf 5 {dialogBox.activeSelf}");
         if (!ControlManager.instance.mobile)
         {
             justStarted = stay;
@@ -656,11 +693,12 @@ public class DialogManager : MonoBehaviour {
 
     public void SelectDialogChoice(int buttonValue)
     {
-        
+
 
         //dialogObject.SetActive(false);
+        Debug.Log($"SelectDialogChoice  {nameof(SelectDialogChoice)} buttonValue {buttonValue}");
         dialogBox.SetActive(false);
-
+        dialogStarter.canActivate = false;
         
 
 
@@ -707,8 +745,8 @@ public class DialogManager : MonoBehaviour {
         //{
         //    choiceB.SetActive(true);
         //}
-
-        dialogStarter.dialogChoices[buttonValue].choiceEvent?.Invoke();
+       // dialogStarter.dialogChoices[buttonValue].choiceEvent.AddListener(OnChoiceSelected);
+        dialogStarter.dialogChoices[buttonValue].choiceEvent?.Invoke();  
 
         dialogChoices.SetActive(false);
         choiceA = null;
@@ -795,5 +833,11 @@ public class DialogManager : MonoBehaviour {
         {
             GameObject.Destroy(dialogChoices.transform.GetChild(i).gameObject);
         }
+    }
+    bool eventInvoked = false;
+    void OnChoiceSelected()
+    {
+        eventInvoked = true;
+        Debug.Log("Event handler executed.");
     }
 }

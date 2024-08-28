@@ -9,5 +9,6 @@ public class DialogChoiceButton : MonoBehaviour
     public void Press()
     {
         DialogManager.instance.SelectDialogChoice(index);
+        Debug.Log("Pressed DialogChoiceBtn");
     }
 }

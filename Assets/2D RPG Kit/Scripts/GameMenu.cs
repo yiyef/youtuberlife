@@ -889,12 +889,19 @@ public class GameMenu : MonoBehaviour {
 
     public void SelectFirstButton()
     {
-        
-            es.SetSelectedGameObject(btn.gameObject);
-            // Select the button
-            btn.Select();
-            // Highlight the button
-            btn.OnSelect(null);
+        if(es != null)
+        {
+            if(btn.gameObject != null)
+            {
+                es.SetSelectedGameObject(btn.gameObject);
+                // Select the button
+                btn.Select();
+                // Highlight the button
+                btn.OnSelect(null);
+            }
+           
+        }
+            
         Debug.Log(btn.gameObject.name);
         
     }

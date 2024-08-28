@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -32,13 +33,13 @@ public class DialogStarter : MonoBehaviour {
 
     [Header("Dialog Lines")]
     //The lines the npcs say when the player talks to them
-    [Tooltip("Set the dialog scriptable object")]
+    [Tooltip("Set the dialog scriptable object")] 
     public Dialog dialog;
 
     public List<DialogChoices> dialogChoices;
 
     //Check wheather the player is in range to talk to npc
-    private bool canActivate;
+    public bool canActivate;
 
     [Header("Activation")]
     //For different activation methods
@@ -494,14 +495,13 @@ public class DialogStarter : MonoBehaviour {
                 }
             }            
         }
-	}
-
+	} 
     //Check if player enters trigger zone
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Facing Collider")
         {
-            canActivate = true;
+            canActivate = true; 
             onCanActivate?.Invoke();
             //DialogManager.instance.dontOpenDialogAgain = false;
             
@@ -513,8 +513,7 @@ public class DialogStarter : MonoBehaviour {
     {
         if (other.tag == "Facing Collider")
         {
-            canActivate = false;
-
+            canActivate = false; 
             if (!activateOnButtonPress)
             {
                 activateOnEnter = true;
@@ -530,4 +529,18 @@ public class DialogStarter : MonoBehaviour {
         waitBeforeActivatingDialog = false;
         
     }
+    public void ShowDialog(Dialog dialog)
+    {
+        DialogManager.instance.ShowDialogAuto(dialog.portraits, dialog.lines, displayName);
+        DialogManager.instance.dialogStarter = this;
+        Debug.LogError($"markComplete  {markComplete}");
+        DialogManager.instance.ShouldActivateQuestAtEnd(questToMark, markComplete);
+        
+        Debug.LogError($"markEventComplete  {markEventComplete}");
+        if (markEventComplete)
+        {
+            DialogManager.instance.ActivateEventAtEnd(eventToMark, markEventComplete);
+        }
+    }
 }
+ 
