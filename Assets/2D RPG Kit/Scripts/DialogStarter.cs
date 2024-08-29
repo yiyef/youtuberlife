@@ -7,7 +7,8 @@ using UnityStandardAssets.CrossPlatformInput;
 
 //Adds a BoxCollider2D component automatically to the game object
 [RequireComponent(typeof(BoxCollider2D))]
-public class DialogStarter : MonoBehaviour {
+public class DialogStarter : MonoBehaviour
+{
 
     [HideInInspector]
     public int numberOfItemsHeld;
@@ -33,7 +34,7 @@ public class DialogStarter : MonoBehaviour {
 
     [Header("Dialog Lines")]
     //The lines the npcs say when the player talks to them
-    [Tooltip("Set the dialog scriptable object")] 
+    [Tooltip("Set the dialog scriptable object")]
     public Dialog dialog;
 
     public List<DialogChoices> dialogChoices;
@@ -84,7 +85,7 @@ public class DialogStarter : MonoBehaviour {
 
     [Header("Receive Settings")]
     [Tooltip("Receive an item after conversation")]
-    public bool receiveItem;    
+    public bool receiveItem;
     [Tooltip("Drag and drop an item prefab")]
     public Item itemToReceive;
     [Tooltip("Give an item after conversation")]
@@ -116,7 +117,7 @@ public class DialogStarter : MonoBehaviour {
 
 
     // Use this for initialization
-    void Start () 
+    void Start()
     {
         if (shopItems != null)
         {
@@ -132,12 +133,13 @@ public class DialogStarter : MonoBehaviour {
                 }
             }
         }
-        
+
     }
-	
-	// Update is called once per frame
-	void Update () {
-        
+
+    // Update is called once per frame
+    void Update()
+    {
+
         //Check if dialog should be activated on awake or enter
         if (activateOnAwake || activateOnEnter)
         {
@@ -270,7 +272,7 @@ public class DialogStarter : MonoBehaviour {
                             {
                                 DialogManager.instance.addedPartyMember = true;
                             }
-                            
+
                         }
 
                         //Show inn menu
@@ -288,7 +290,7 @@ public class DialogStarter : MonoBehaviour {
                             Shop.instance.itemsForSale = ItemsForSale;
                             Shop.instance.sayGoodBye = dialog.closingMessage;
                         }
-                        
+
                         DialogManager.instance.ShowDialogAuto(dialog.portraits, dialog.lines, displayName);
                         DialogManager.instance.dialogStarter = this;
                         DialogManager.instance.ShouldActivateQuestAtEnd(questToMark, markComplete);
@@ -296,7 +298,7 @@ public class DialogStarter : MonoBehaviour {
                         {
                             DialogManager.instance.ActivateEventAtEnd(eventToMark, markEventComplete);
                         }
-                        
+
                     }
                 }
             }
@@ -305,7 +307,7 @@ public class DialogStarter : MonoBehaviour {
         //Check for button input
         if (Input.GetButtonDown("RPGConfirmPC") || Input.GetButtonDown("RPGConfirmJoy") || CrossPlatformInputManager.GetButtonDown("RPGConfirmTouch") && !DialogManager.instance.dialogBox.activeInHierarchy)
         {
-            
+            Debug.LogError($"{nameof(canActivate)} {canActivate}");
             if (canActivate && !DialogManager.instance.dialogBox.activeInHierarchy && !Inn.instance.innMenu.activeInHierarchy && !GameMenu.instance.menu.activeInHierarchy && !GameManager.instance.battleActive)
             {
                 PlayerController.instance.canMove = false;
@@ -337,7 +339,7 @@ public class DialogStarter : MonoBehaviour {
                         bodySpriteRenderer.sprite = bodyLeft;
                     }
                 }
-                
+
                 //activateOnEnterConfirm = false;
                 if (!DialogManager.instance.dontOpenDialogAgain)
                 {
@@ -346,7 +348,8 @@ public class DialogStarter : MonoBehaviour {
                         //Disable player movement
                         PlayerController.instance.canMove = false;
                         StartCoroutine(waitCo());
-                    }else
+                    }
+                    else
                     {
                         activateOnAwake = false;
                         GameMenu.instance.touchMenuButton.SetActive(false);
@@ -413,7 +416,7 @@ public class DialogStarter : MonoBehaviour {
                                         receiveItem = true;
                                     }
                                 }
-                            }                            
+                            }
                         }
 
                         if (giveItem)
@@ -466,7 +469,7 @@ public class DialogStarter : MonoBehaviour {
                             Inn.instance.sayGoodBye = dialog.closingMessage;
                         }
 
-                        if(isShop)
+                        if (isShop)
                         {
                             DialogManager.instance.isShop = isShop;
                             Shop.instance.itemsForSale = ItemsForSale;
@@ -490,21 +493,21 @@ public class DialogStarter : MonoBehaviour {
                         {
                             DialogManager.instance.ActivateEventAtEnd(eventToMark, markEventComplete);
                         }
-                        
-                    }                    
+
+                    }
                 }
-            }            
+            }
         }
-	} 
+    }
     //Check if player enters trigger zone
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Facing Collider")
+        if (other.tag == "Facing Collider")
         {
-            canActivate = true; 
+            canActivate = true;
             onCanActivate?.Invoke();
             //DialogManager.instance.dontOpenDialogAgain = false;
-            
+
         }
     }
 
@@ -513,21 +516,26 @@ public class DialogStarter : MonoBehaviour {
     {
         if (other.tag == "Facing Collider")
         {
-            canActivate = false; 
+            canActivate = false;
             if (!activateOnButtonPress)
             {
                 activateOnEnter = true;
             }
         }
     }
-
+    public void SetCanActivate(bool canActive)
+    {
+        canActivate = canActive; 
+        activateOnAwake = true; 
+        activateOnEnter = false;
+    }
     //Put in a slight delay between activating the dialog and showing the dialog
     IEnumerator waitCo()
     {
 
         yield return new WaitForSeconds(waitTime);
         waitBeforeActivatingDialog = false;
-        
+
     }
     public void ShowDialog(Dialog dialog)
     {
@@ -535,7 +543,7 @@ public class DialogStarter : MonoBehaviour {
         DialogManager.instance.dialogStarter = this;
         Debug.LogError($"markComplete  {markComplete}");
         DialogManager.instance.ShouldActivateQuestAtEnd(questToMark, markComplete);
-        
+
         Debug.LogError($"markEventComplete  {markEventComplete}");
         if (markEventComplete)
         {
@@ -543,4 +551,3 @@ public class DialogStarter : MonoBehaviour {
         }
     }
 }
- 

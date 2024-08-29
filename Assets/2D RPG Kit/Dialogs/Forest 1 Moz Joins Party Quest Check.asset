@@ -15,8 +15,9 @@ MonoBehaviour:
   portraits:
   - {fileID: 8558633213039616950, guid: 5dee9006179220145ba7295536490dbc, type: 3}
   lines:
+  - '**'
+  - '**'
   - //Man
   - '**0'
   - Don't ya leave me hanging boys!
-  - I really need your help here!
   closingMessage: []

@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portraits: []
   lines:
+  - '**'
+  - '**'
   - //Mother
   - '**'
   - Good morning my dear.
