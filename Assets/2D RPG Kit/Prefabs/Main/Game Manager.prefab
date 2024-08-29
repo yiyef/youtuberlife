@@ -229,8 +229,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18f511f74eb2254592c491f3e6427f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolbar: 2
-  currentTab: Inventory
+  toolbar: 3
+  currentTab: Debugging
   characterSlots:
   - {fileID: 1674758041330280}
   - {fileID: 1059803243072380}
